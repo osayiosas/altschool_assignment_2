@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WP Pusher Checkout</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/normilize.css" />
+    <!-- <link rel="stylesheet" href="css/rest.css"> -->
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/wppusher-logo copy.png" alt="logo" />
+        <nav>
+            <ul>
+                <li><a class="role" href="index.html">Download</a></li>
+                <li><a class="role" href="index.html">Learn more</a></li>
+                <li><a class="role" href="index.html">Pricing</a></li>
+                <li><a class="role" href="index.html">Help</a></li>
+                <li><a class="role" href="index.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="split"></div>
+
+    <div id="wrapper">
+        <div id="checkout-form">
+            <h2 class="heading">Checkout</h2>
+
+            <div class="split"></div>
+
+            <form action="">
+                <div class="form-heading">
+                    <h3><span>1</span> Your Basic Information</h3>
+                </div>
+                <div class="name-field">
+                    <div class="form-control">
+                        <label for="firstName">First Name</label><br />
+                        <input type="text" name="firstName" placeholder="Jane" />
+                    </div>
+                    <div class="form-control">
+                        <label for="lastName">Last Name</label><br />
+                        <input type="text" name="lastName" placeholder="Doe" />
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label for="email">E-mail</label><br />
+                    <input type="email" name="email" placeholder="janedoe@example.com" id="email" />
+                </div>
+                <div class="split"></div>
+
+                <div class="form-heading">
+                    <h3><span>2</span> Your Payment Information</h3>
+                </div>
+                <div class="form-control">
+                    <label for="creditCard" id="credit-card">Credit Card</label><br />
+                    <input type="text" name="creditCard" class="credit-card"
+                        placeholder="Card Number &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp MM/YY &nbsp &nbsp CVC" />
+                </div>
+
+                <div class="split"></div>
+                <section class="form-purchase">
+                    <button>Buy WP Pusher</button>
+                    <div class="need-help">
+                        <p>
+                            <span class="help-icon"><img src="img/Mask.svg" alt="help" /></span><b>Need any help? </b>
+                            Don't hesistate to contact support!
+                        </p>
+                    </div>
+                </section>
+            </form>
+            <img src="/img/powered_by_stripe.svg" alt="Powered by Stripe" class="stripe" />
+        </div>
+
+        <div id="pricing">
+            <h3>Freelancer</h3>
+            <div class="price">
+                <h1>99</h1>
+            </div>
+            <em class="renewal">Automatically renews <br />
+                after 1 year</em>
+            <ul class="features">
+                <li>Use on 5 client sites</li>
+                <li>Private repositories</li>
+                <li>Email support</li>
+            </ul>
+
+            <p class="need-clients">Need <b>20</b> client sites?</p>
+            <a href="#">Switch to the <em>Agency</em> plan</a>
+
+            <div class="split"></div>
+
+            <em class="review">
+                FTP is horrible to deal with. <br />
+                <b>WP Pusher</b> solves that issue, <br />
+                and the customer support is awesome!
+            </em>
+
+            <div class="avatar">
+                <img src="/img/Bitmap.png" alt="profile-pic" />
+                <h4>Kirk Beard</h4>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2018 WP Pusher IVS · <strong>Terms of Service</strong></p>
+    </footer>
+</body>
+
+</html>

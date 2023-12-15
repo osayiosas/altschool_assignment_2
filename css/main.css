@@ -1,0 +1,339 @@
+/* font-family*/
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300&family=Roboto&display=swap");
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* global styles */
+:root {
+  --main: #fff;
+  --bg-blue: #1179bf;
+  --bg-grey: #edeff2;
+  --bg-btn: #038e7d;
+  --bg-white: #f5f8fa;
+  --text-blue: #1d2c3c;
+  --text-grey: #646e7a;
+  --light-blue: #548bc5;
+  --light-grey: #e0e6ea;
+  --link-blue: #31708f;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* Clear fix hack */
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+em,
+a,h1, h4{
+  color: var(--light-grey);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+
+/* DESKTOP VIEWPORT */
+
+nav img {
+  width: 200px;
+  height: 39px;
+}
+
+form label {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1386px;
+  min-height: 76px;
+}
+
+.logo {
+  width: 200px;
+  height: 39px;
+}
+
+nav {
+  max-width: 476px;
+  min-height: 40px;
+}
+
+nav > ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+nav > ul > li:last-child {
+  border: 2px solid var(--text-blue);
+  border-radius: 6px;
+  width: 91px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav img {
+  width: 100px;
+  height: 38px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#checkout-form {
+  padding: 30px;
+}
+
+#checkout-form .heading {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.role {
+  margin: 15px;
+  text-decoration: none;
+  color: var(--text-blue);
+  font-family: "lato", serif;
+  font-weight: 700px;
+  font-size: 14px;
+}
+
+form input {
+  width: 227px;
+  height: 36px;
+  background: var(--bg-grey);
+  border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  padding: 0 10px;
+  margin-top: 5px;
+}
+
+form input:focus {
+  border: 2px solid var(--text-grey);
+}
+
+#wrapper {
+  display: flex;
+  border-radius: 6px;
+  background: var(--bg-white);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05),
+    0px 15px 35px 0px rgba(43, 64, 78, 0.1);
+  margin: 70px auto;
+  max-width: 65%;
+}
+
+#pricing {
+  background: var(--bg-blue);
+  color: var(--white);
+  padding: 30px 50px;
+  font-size: 16px;
+}
+
+#pricing h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--main);
+}
+
+#pricing .need-clients {
+  padding-bottom: 10px;
+}
+
+#pricing .split {
+  color: var(--light-grey);
+  opacity: 0.25;
+  margin: 25px 0;
+}
+
+#pricing .avatar {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+#pricing .avatar img {
+  border-radius: 50%;
+}
+
+#pricing .avatar h4 {
+  margin: auto 0;
+}
+
+.name-field {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul.features {
+  margin: 30px 0;
+  padding-left: 0;
+  color: var(--light-grey);
+}
+
+.features li {
+  background: url("/img/Combined\ Shape\ Copy\ 2.svg") no-repeat 0px 8px
+    transparent;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 30px;
+  color: var(--light-grey);
+}
+
+.split {
+  height: 2px;
+  max-width: 100%;
+  background: var(--light-grey);
+  opacity: 0.6;
+  margin: 30px 0;
+}
+
+.form-heading h3 {
+  font-size: 18px;
+}
+
+.form-heading span {
+  border: 2px solid var(--light-blue);
+  border-radius: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 1px 7px;
+  text-align: center;
+  margin-right: 5px;
+  color: var(--light-blue);
+}
+
+.name-field {
+  gap: 25px;
+}
+p.need-clients{
+  color: var(--main);
+}
+.form-control {
+  margin-top: 15px;
+}
+
+input.credit-card {
+  width: 100%;
+}
+
+.need-help p {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.stripe {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.form-purchase {
+  max-width: 483px;
+  min-height: 146.1px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.form-purchase > button {
+  width: 483px;
+  height: 52px;
+  background-color: var(--bg-btn);
+  color: var(--bg-grey);
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.6px;
+  text-align: center;
+}
+
+.price {
+  margin: 10px 0;
+}
+
+.price h1 {
+  font-size: 60px;
+  font-weight: 300;
+  margin: 0;
+  position: relative;
+}
+
+.price h1::before {
+  content: "$";
+  font-size: 24px;
+  font-weight: 700;
+  bottom: 24px;
+  right: 2px;
+  position: relative;
+}
+
+.price h1::after {
+  content: "/ year";
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+}
+
+footer {
+  width: 867px;
+  height: 17px;
+  margin: 10px auto;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+
+  p {
+    width: 303px;
+    height: 16px;
+    color: var(--text-grey);
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
+
+    strong {
+      color: var(--link-blue);
+    }
+  }
+}
